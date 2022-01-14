@@ -37,10 +37,13 @@ public class ExampleFactory {
         exampleC.getListExampleInside().add(exampleInsideE);
         exampleC.getListExampleInside().add(exampleInsideF);
 
+        Example exampleD = new Example(4);
+
         List<Example> examples = new ArrayList<>();
         examples.add(exampleA);
         examples.add(exampleB);
         examples.add(exampleC);
+        examples.add(exampleD);
 
         return Optional.of(examples);
     }
